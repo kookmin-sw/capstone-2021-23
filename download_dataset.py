@@ -7,11 +7,14 @@ j=0
 x_len=0
 y_len=0
 
-isdone = False
-while not isdone:
+isDone = False
+while not isDone:
     driver = webdriver.Chrome('/home/user/바탕화면/capstone/crawler/chromedriver')
     options = webdriver.ChromeOptions()
     options.add_experimental_option("prefs", {
+        """
+        다운로드 디렉토리 설정 가능
+        """
         # "download.default_directory": r"/foscar ~~",
         "download.prompt_for_download": False,
         "download.directory_upgrade": True,
@@ -38,8 +41,12 @@ while not isdone:
 
     driver.implicitly_wait(3)
     data_list[i][j].click()
+    """
+    여기에 전처리 하는 코드 작성해야 될 듯 
+    """
     if j == len(data_list[i])-1:
         if i== len(data_list):
+            isDone = True
             break
         i+=1
         j=0
