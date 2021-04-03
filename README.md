@@ -15,8 +15,7 @@
 ## 3. 팀 소개
 ### **박건희(팀장)**
 
-<img align="left" src = "https://user-images.githubusercontent.com/21096675/112747542-12c93a80-8ff1-11eb-85e9-965e0c9e78d5.png
-" width="200px" height="200px">
+<img align="left" src = "https://user-images.githubusercontent.com/21096675/112747542-12c93a80-8ff1-11eb-85e9-965e0c9e78d5.png" width="200px" height="200px">
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🐧 &nbsp;&nbsp;**Student ID**    : 20163107  
 &nbsp;  
@@ -30,8 +29,7 @@
 
 ### **김소망**
 
-<img align="left" src = "https://user-images.githubusercontent.com/21096675/113386677-b5086a00-93c5-11eb-8388-1901400ac829.png
-" width="200px" height="200px">
+<img align="left" src = "https://user-images.githubusercontent.com/21096675/113386677-b5086a00-93c5-11eb-8388-1901400ac829.png" width="200px" height="200px">
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🐧 &nbsp;&nbsp;**Student ID**    : 20163094  
 &nbsp;  
@@ -57,8 +55,7 @@
 <br/>
 ### **함윤석**
 
-<img align="left" src = "https://user-images.githubusercontent.com/21096675/113386691-bafe4b00-93c5-11eb-98d9-9e3933ae8d1c.png
-" width="200px" height="200px">
+<img align="left" src = "https://user-images.githubusercontent.com/21096675/113386691-bafe4b00-93c5-11eb-98d9-9e3933ae8d1c.png" width="200px" height="200px">
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🐧 &nbsp;&nbsp;**Student ID**    : 20163175    
 &nbsp;  
