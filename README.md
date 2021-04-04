@@ -12,7 +12,14 @@
 
 <br/>
 
-## 3. 팀 소개
+
+## 3. 소개 영상
+
+[![23조 중간 발표 영상](http://img.youtube.com/vi/mTJcfbAd-b8/0.jpg)](https://youtu.be/mTJcfbAd-b8?t=0s)
+
+<br/>
+
+## 4. 팀 소개
 ### **박건희(팀장)**
 
 <img align="left" src = "https://user-images.githubusercontent.com/21096675/112747542-12c93a80-8ff1-11eb-85e9-965e0c9e78d5.png" width="200px" height="200px">
