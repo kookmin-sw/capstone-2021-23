@@ -3,13 +3,14 @@
 ## 1. 프로젝트 소개
 
 
-본 프로젝트는 실시간 위험행동 감지 CCTV 이다. CCTV 영상에서 행동 분류(action classification)를 하는 AI 기술을 사용하여 위험 행동인지를 판단한다. 위험 행동으로 감지된 결과는 관리자에게 알린다. 
-위험 상황을 실시간으로 대응할 수 있고, CCTV 관리 및 인력 비용 절감 효과가 기대된다.
+본 프로젝트에서는 실시간 이상(ex.폭행) 행동 감지 CCTV 시스템을 구축하고자 한다. 행동 인식(action recognition)을 하는 AI 기술로 CCTV 영상을 분석하여 이상 행동 발생 여부를 판단한다. 이상 행동으로 감지된 결과는 CCTV 관리자에게 전송하여 관리자가 위험 상황을 신속하게 대응하도록 보조 할 수 있다.
 
 <br/>
 
 ## 2. Abstract
 
+
+This project aims to implement a CCTV system that can detect dangerous events immediately. It determines whether there happened the events using AI model, which recognizes several human actions. By sending the detected results to CCTV mangers, we hopefully expect the system to assist him to deal with the situation quickly.
 <br/>
 
 
