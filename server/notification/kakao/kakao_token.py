@@ -5,7 +5,7 @@ url = "https://kauth.kakao.com/oauth/token"
 
 data = {
     "grant_type" : "authorization_code",
-    "client_id" : "97b0507932789b67dc0ac165ec4e782f",
+    "client_id" : "{API KEY}",
     "redirect_uri" : "https://localhost.com",
     "code"         : "hW9GZSGwE5B7a0WgrNBd6sg9tPrLOvBsVGedPdCib5aLWsjYKNbPlx5OZubqt-KxtuAdKgorDR4AAAF5Ru2lNg"
     
