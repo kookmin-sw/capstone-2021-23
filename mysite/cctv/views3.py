@@ -1,8 +1,7 @@
-from django.views.decorators import gzip
+#from django.views.decorators import gzip
 from django.http import StreamingHttpResponse
 import cv2
 import threading
-from django.shortcuts import render
 
 class VideoCamera(object):
     def __init__(self):
@@ -17,7 +16,6 @@ class VideoCamera(object):
     def get_frame(self):
         image = self.frame
         _, jpeg = cv2.imencode('.jpg', image)
-        cv2.imshow(jpeg)
         return jpeg.tobytes()
 
     def update(self):
@@ -28,20 +26,14 @@ class VideoCamera(object):
 def gen(camera):
     while True:
         frame = camera.get_frame()
-        print('yield')
         yield(b'--frame\r\n'
               b'Content-Type: image/jpeg\r\n\r\n' + frame + b'\r\n\r\n')
 
 
-@gzip.gzip_page
+#@gzip.gzip_page
 def livefe(request):
-    print('hello')
     try:
         cam = VideoCamera()
-        print('return')
         return StreamingHttpResponse(gen(cam), content_type="multipart/x-mixed-replace;boundary=frame")
     except:  # This is bad! replace it with proper handling
         pass
-
-def index(request):
-    return render(request, 'cctv/index.html')
