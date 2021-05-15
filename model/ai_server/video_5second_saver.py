@@ -1,43 +1,46 @@
+import cv2
+import sys
 import os
-import argparse
-import os.path as osp
+import time
 
-import torch
+sys.path.append("/home/foscar/capstone/lib/python3.8/site-packages")
 
-from mmaction.apis import inference_recognizer, init_recognizer
+cap = cv2.VideoCapture(0)
+cap.set(3, 1080)
+cap.set(4, 1920)
+fc = 20.0
 
-receive_path= 'receive_video/'
-path_dir = 'video_for_process/'
-db       = "assult_candidate/"
-device = torch.device("cuda")
-# build the recognizer from a config file and checkpoint file/url
-config="../configs/recognition/slowfast/custom.py"
-checkpoint="../data_center/fight_assault/BinaryDataTree/tanos_lr_improve_checkpoints/epoch_70.pth"
-model = init_recognizer(
-    config,
-    checkpoint,
-    device=device,
-    )
-label="../demo/custom_map.txt"
+count = 0
+codec = cv2.VideoWriter_fourcc('D', 'I', 'V', 'X')
+writing_video_dir="writing_video"
+receive_video_dir="receive_video"
+
+record_flag = False
+init_flag = False
+startTime=None
 while True:
-    if not os.listdir(receive_path):
-        continue
-    os.system(f"mv {receive_path}* {path_dir}")
-    file_list = os.listdir(path_dir)
-    file_list.sort()#시간순 정렬
-    for i in file_list:
-        results = inference_recognizer(model,path_dir+i,label)
-        if results[0][0]=="abnormal" and results[0][1]>0.86:
-            '''
-            폭력 발생 db로 영상 보내야 함 and 처리 완료이므로 디렉토리에서 pop
-            '''
-            os.system(f"mv {path_dir+i} {db}")
-            print(f"moved to db and abnormal score : {results[0][1]}")
+    ret, frame = cap.read()
+    cv2.imshow('test', frame)
+    k = cv2.waitKey(1)
+    if k == 27:
+        break
+    if not record_flag:
+        record_flag=True
+        startTime=time.time()
+        tm=time.gmtime(startTime)
+        avi_name=f"{tm.tm_year}.{tm.tm_mon}.{tm.tm_mday}.{tm.tm_hour}:{tm.tm_min}:{tm.tm_sec}"
 
+        # a=time.strftime('%c', time.localtime(startTime))
+        # out = cv2.VideoWriter(f'{count}.avi', codec, fc, (int(cap.get(3)), int(cap.get(4))))
+        out = cv2.VideoWriter(f'{writing_video_dir}/{avi_name}.avi', codec, fc, (int(cap.get(3)), int(cap.get(4))))
+    if startTime!=None and record_flag:
+        if time.time()-startTime<5:
+            out.write(frame)
         else:
-            '''
-            폭력 발생 x 이므로 디렉토리에서 영상 걍 삭제
-            '''
-            os.system(f"rm {path_dir+i}")
-            print(f"removed {path_dir+i} and :{results}")
+            record_flag=False
+            out.release()
+            print(f"{avi_name} Saved")
+            os.system(f"mv {writing_video_dir}/* {receive_video_dir}/")
+cap.release()
+cv2.destroyAllWindows()
 
