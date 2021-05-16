@@ -16,8 +16,8 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import include,path
 #from cctv import views
-
+app_name='cctv'
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('cctv/', include('cctv.urls')),
+    path('cctv/', include(('cctv.urls','cctv'),namespace="cctv")),
 ]

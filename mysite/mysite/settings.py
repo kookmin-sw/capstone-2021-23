@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-g*i8syhs15xh+etrf)*h!gj4jt6v_8xc*!92!2o_gd%0d4-r2u
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'cctv',
 ]
 
 MIDDLEWARE = [
@@ -53,9 +54,22 @@ MIDDLEWARE = [
 ROOT_URLCONF = 'mysite.urls'
 
 TEMPLATES = [
+
+    #{
+    #    'BACKEND': 'django.template.backends.jinja2.Jinja2',
+    #    'DIRS': [os.path.join(BASE_DIR,'templates')],
+    #    'APP_DIRS': True,
+    #    'OPTIONS': {
+    #        'extensions': [
+    #            'jinja2.ext.do',
+    #            'jinja2.ext.loopcontrols',
+    #        ],
+    #    },
+    #},
+    
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [os.path.join(BASE_DIR , 'templates')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
