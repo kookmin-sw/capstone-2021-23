@@ -39,8 +39,29 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'cctv',
+    'users',
+
+    'django.contrib.sites',
+    'allauth',
+    'allauth.socialaccount',
+    'allauth.account',
+    'allauth.socialaccount.providers.kakao',
 ]
 
+# one site can have several domains, 
+# but This system operates just 1 site
+SITE_ID = 1 
+"""
+SOCIALACCOUNT_PROVIDERS = {
+    'kakao' : {
+        'APP' : {
+            'client_id' : ,
+            'secret' : ,
+            'key' :
+        }    
+    }        
+}
+"""
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
