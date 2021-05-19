@@ -26,7 +26,8 @@ SECRET_KEY = 'django-insecure-g*i8syhs15xh+etrf)*h!gj4jt6v_8xc*!92!2o_gd%0d4-r2u
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
+
 
 
 # Application definition
@@ -38,13 +39,39 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'cctv',
+    'users',
+
+    'django.contrib.sites',
+    'allauth',
+    'allauth.socialaccount',
+    'allauth.account',
+    'allauth.socialaccount.providers.kakao',
+
+    #'rest_framework',
+    #'rest_framework.authtoken',
+    #'rest_auth.registration',
 ]
 
+# one site can have several domains, 
+# but This system operates just 1 site
+SITE_ID = 1 
+"""
+SOCIALACCOUNT_PROVIDERS = {
+    'kakao' : {
+        'APP' : {
+            'client_id' : ,
+            'secret' : ,
+            'key' :
+        }    
+    }        
+}
+"""
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
-    'django.middleware.csrf.CsrfViewMiddleware',
+     #'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
@@ -53,9 +80,22 @@ MIDDLEWARE = [
 ROOT_URLCONF = 'mysite.urls'
 
 TEMPLATES = [
+
+    #{
+    #    'BACKEND': 'django.template.backends.jinja2.Jinja2',
+    #    'DIRS': [os.path.join(BASE_DIR,'templates')],
+    #    'APP_DIRS': True,
+    #    'OPTIONS': {
+    #        'extensions': [
+    #            'jinja2.ext.do',
+    #            'jinja2.ext.loopcontrols',
+    #        ],
+    #    },
+    #},
+    
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [os.path.join(BASE_DIR , 'templates')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -77,7 +117,7 @@ WSGI_APPLICATION = 'mysite.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': str(BASE_DIR / 'db.sqlite3'),
+        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
     }
 }
 
