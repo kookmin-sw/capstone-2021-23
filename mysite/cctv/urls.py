@@ -7,6 +7,6 @@ urlpatterns =[
     # parameter
     # route, view, (kwargs, name)
     path('', views.index, name='index'),
-    path('livefe/', views.livefe,name='livefe'),
+    path('serveStreaming/', views.serveStreaming,name='serveStreaming'),
     #path('', views.gen, name='gen')
 ]
