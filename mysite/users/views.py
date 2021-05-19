@@ -3,7 +3,6 @@ import requests
 from django.shortcuts import redirect,render,reverse
 from django.contrib import messages
 from . import exception
-
 from .models import Account
 import json
 
@@ -21,9 +20,8 @@ cid2 = 'a632e5f5e4017b7725e3ac3dbb86daa5'
 client_id = cid1
 
 
-=======
 # Create your views here.
-domain = "http://192.168.0.10:8030/"
+#domain = "http://192.168.0.10:8030/"
 def kakao_login(request):
     
     #try:
