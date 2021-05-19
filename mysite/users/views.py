@@ -3,6 +3,7 @@ import requests
 from django.shortcuts import redirect,render,reverse
 from django.contrib import messages
 from . import exception
+<<<<<<< HEAD
 
 from .models import Account
 import json
@@ -21,12 +22,17 @@ cid2 = 'a632e5f5e4017b7725e3ac3dbb86daa5'
 client_id = cid1
 
 
+=======
+# Create your views here.
+domain = "http://192.168.0.10:8030/"
 def kakao_login(request):
     
     #try:
     #    if request.users.is_authenticated:
     #        raise SocailLoginException("User already logged in")
     #os.environ.get("KAKAO_ID")
+
+    client_id = '9606de62e75d3b6b41ce598441911359'#os.environ.get("KAKAO_ID")
     REDIRECT_URI =domain+ "users/login/kakao/callback/"
     return redirect(
         f"https://kauth.kakao.com/oauth/authorize?client_id={client_id}&redirect_uri={REDIRECT_URI}&response_type=code"
@@ -44,14 +50,18 @@ def kakao_login_callback(request):
     try:
     	#(1)
         code = request.GET.get("code")
+
         #os.environ.get("KAKAO_ID")
+        client_id = '9606de62e75d3b6b41ce598441911359'#os.environ.get("KAKAO_ID")
+>>>>>>> 4a2fadaf96581ada074567097faf9c03f44a7520
         REDIRECT_URI = domain + "users/login/kakao/callback/"
         #(2)
         token_request = requests.get(
             f"https://kauth.kakao.com/oauth/token?grant_type=authorization_code&client_id={client_id}&redirect_uri={REDIRECT_URI}&code={code}")
         #(3)
         token_json = token_request.json()
-        
+
+        print(token_json)
         error = token_json.get("error", None)
         if error is not None:
             print(error)
@@ -63,8 +73,7 @@ def kakao_login_callback(request):
             "https://kapi.kakao.com/v2/user/me",
             headers={"Authorization": f"Bearer {access_token}"},
         )
-        profile_json = profile_request.json()
-        
+        profile_json = profile_request.json()        
         kakao_id = profile_json.get('id',None)
         
         if kakao_id is not None:
@@ -86,7 +95,6 @@ def kakao_login_callback(request):
         #nickname = properties.get("nickname")
         #profile_image = properties.get("profile_image")
         #(7)
-        
         # 카카오 로그인 성공한 경우
         try:
             #user = Account.objects.get_or_none(user_id = email)
@@ -138,8 +146,9 @@ def kakao_login_callback(request):
         return redirect("cctv:index")
     except KeyError: # exception.KakaoException():
         print('email 없음')
+    except exception.KakaoException():
         return redirect("users:login")
 
 def login(request):
     render(request, "users/login.html")
-    
+
