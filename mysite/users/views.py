@@ -3,8 +3,6 @@ import requests
 from django.shortcuts import redirect,render,reverse
 from django.contrib import messages
 from . import exception
-<<<<<<< HEAD
-
 from .models import Account
 import json
 
@@ -22,9 +20,8 @@ cid2 = 'a632e5f5e4017b7725e3ac3dbb86daa5'
 client_id = cid1
 
 
-=======
 # Create your views here.
-domain = "http://192.168.0.10:8030/"
+#domain = "http://192.168.0.10:8030/"
 def kakao_login(request):
     
     #try:
@@ -53,7 +50,6 @@ def kakao_login_callback(request):
 
         #os.environ.get("KAKAO_ID")
         client_id = '9606de62e75d3b6b41ce598441911359'#os.environ.get("KAKAO_ID")
->>>>>>> 4a2fadaf96581ada074567097faf9c03f44a7520
         REDIRECT_URI = domain + "users/login/kakao/callback/"
         #(2)
         token_request = requests.get(
