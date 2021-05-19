@@ -3,7 +3,6 @@ import requests
 from django.shortcuts import redirect,render,reverse
 from django.contrib import messages
 from . import exception
-<<<<<<< HEAD
 
 from .models import Account
 import json
@@ -53,7 +52,6 @@ def kakao_login_callback(request):
 
         #os.environ.get("KAKAO_ID")
         client_id = '9606de62e75d3b6b41ce598441911359'#os.environ.get("KAKAO_ID")
->>>>>>> 4a2fadaf96581ada074567097faf9c03f44a7520
         REDIRECT_URI = domain + "users/login/kakao/callback/"
         #(2)
         token_request = requests.get(
