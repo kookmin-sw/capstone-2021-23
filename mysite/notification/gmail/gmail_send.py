@@ -1,3 +1,5 @@
+#-*- encoding: utf-8 -*-. -
+
 import httplib2
 import os
 import oauth2client
@@ -121,22 +123,58 @@ def createMessageWithAttachment(
 
 
 def main():
-    to = "pgh9801@gmail.com"
+    to = "ham5312@gmail.com"
     sender = "plmoknijb3123@gmail.com"
     subject = "test mail"
     msgPlain = "Hi!\nHow are you?\nHere is the link you wanted:\nit is test\nhttp://www.naver.com"
     msgHtml = """\
 <html>
-  <head></head>
+  <head>
+    <meta charset="utf-8">
+  </head>
   <body>
-    <p>Hi!<br>
-       How are you?<br>
-       Here is the <a href="http://www.naver.com">link</a> you wanted.<br>
-       it is test!<br>
-    </p>
+    <div class="layout one-col fixed-width stack layout--inherit-padding--inline">
+      <div class="layout__inner" style="background-color: #ffffff;">
+        <!--[if (mso)|(IE)]><table align="center" cellpadding="0" cellspacing="0" role="presentation"><tr class="layout-fixed-width" style="background-color: #ffffff;"><td style="width: 600px" class="w560"><![endif]-->
+        <div class="column">
+          <div class="image--inline" align="center">
+            <img alt="" width="600" style="max-width:900px" src="https://i1.createsend1.com/resize/ti/y/7F/D7D/E9C/eblogo/Screenshotfrom2021-05-1915-08-01.png" class="gnd-corner-image gnd-corner-image-center gnd-corner-image-top">
+          </div>
+
+          <div class="column__padding--inline">
+            <div style="line-height:10px;font-size:1px">&nbsp;</div>
+          </div>
+
+          <div class="column__padding--inline">
+            <div class="text--inline">
+              <h2>폭력이 감지되었습니다</h2><p>2021년 05월 19일 15:30 미래관 609호</p>
+            </div>
+          </div>
+
+          <div class="column__padding--inline">
+            <div class="btn btn--flat btn--large" style="text-align:center;">
+              <a cs-button="" href="http://test.com" fix-pos="" data-vml-width="142" height="48" style="background-color: #d10000; color: #ffffff !important; font-family: sans-serif; border-radius: 4px;" target="_blank">사이트 바로가기</a>
+            </div>
+          </div>
+
+          <div class="column__padding--inline">
+            <div style="line-height:10px;font-size:1px">&nbsp;</div>
+          </div>
+
+          <div class="column__padding--inline">
+            <div class="text--inline">
+              <p>Thanks for your service<br><strong>Team Stop</strong></p>
+            </div>
+          </div>
+
+        </div>
+        <!--[if (mso)|(IE)]></td></tr></table><![endif]-->
+      </div>
+    </div>
   </body>
 </html>
 """
+
     # print(msgPlain)
     # print(msgHtml)
     SendMessage(sender, to, subject, msgHtml, msgPlain)
