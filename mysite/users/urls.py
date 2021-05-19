@@ -7,4 +7,8 @@ urlpatterns = [
     #path('', views.index, name='index'),
     path('login/kakao/', views.kakao_login, name='kakao-login'),
     path("login/kakao/callback/", views.kakao_login_callback, name="kakao-callback"),    
+<<<<<<< HEAD
+    ]
+=======
 ]
+>>>>>>> 4a2fadaf96581ada074567097faf9c03f44a7520

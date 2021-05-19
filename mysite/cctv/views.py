@@ -15,10 +15,10 @@ class VideoCamera(object):
         self.video.release()
 
     def get_frame(self):
-        image = self.frame #numpy ndarray
-        # jpg didn't worked!!!!!
-        _,png = cv2.imencode('.png', image)
-        return png.tobytes()
+        image = self.frame
+        _, jpeg = cv2.imencode('.png', image)
+        cv2.imshow(jpeg)
+        return jpeg.tobytes()
 
     def update(self):
         while True:
@@ -28,16 +28,19 @@ class VideoCamera(object):
 def gen(camera):
     while True:
         frame = camera.get_frame()
+        print('yield')
         yield(b'--frame\r\n'
               b'Content-Type: image/jpeg\r\n\r\n' + frame + b'\r\n\r\n')
 
 
 @gzip.gzip_page
 def serveStreaming(request):
+    print('hello')
     try:
         cam = VideoCamera()
+        print('return')
         return StreamingHttpResponse(gen(cam), content_type="multipart/x-mixed-replace;boundary=frame")
-    except:  # Should Handle Error!!!!!
+    except:  # This is bad! replace it with proper handling
         pass
 
 def index(request):

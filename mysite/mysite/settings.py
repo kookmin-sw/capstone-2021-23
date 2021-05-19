@@ -27,6 +27,10 @@ SECRET_KEY = 'django-insecure-g*i8syhs15xh+etrf)*h!gj4jt6v_8xc*!92!2o_gd%0d4-r2u
 DEBUG = True
 
 ALLOWED_HOSTS = ['*']
+<<<<<<< HEAD
+
+=======
+>>>>>>> 4a2fadaf96581ada074567097faf9c03f44a7520
 
 
 # Application definition
@@ -46,6 +50,9 @@ INSTALLED_APPS = [
     'allauth.socialaccount',
     'allauth.account',
     'allauth.socialaccount.providers.kakao',
+    #'rest_framework',
+    #'rest_framework.authtoken',
+    #'rest_auth.registration',
 ]
 
 # one site can have several domains, 
@@ -66,7 +73,7 @@ MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
-    'django.middleware.csrf.CsrfViewMiddleware',
+     #'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
@@ -112,7 +119,7 @@ WSGI_APPLICATION = 'mysite.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': str(BASE_DIR / 'db.sqlite3'),
+        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
     }
 }
 
