@@ -10,21 +10,22 @@ import json
 server_url = "http://"+"192.168.0.15:8040"+"/users/email/"
 
 def StrConverter(filename:str)->dict:
-    # tm=time.gmtime(filename[:-4])
-    # avi_name=f"{tm.tm_year}.{tm.tm_mon}.{tm.tm_mday}.{tm.tm_hour}:{tm.tm_min}:{tm.tm_sec}"
+
     key=['year','month','day','hour','min','sec']
     filename=filename.replace(".",' ')
     filename=filename.replace(":",' ')
     data={ i:j for i,j in list(zip(key,filename.split())) }
     return data
-
+THRESEHOLD=(0.86)
 receive_path= 'receive_video/'
 path_dir = 'video_for_process/'
 db       = "assult_candidate/"
 device = torch.device("cuda")
 # build the recognizer from a config file and checkpoint file/url
 config="../configs/recognition/slowfast/custom.py"
-checkpoint="../data_center/fight_assault/BinaryDataTree/tanos_lr_improve_checkpoints/epoch_70.pth"
+# checkpoint="../data_center/fight_assault/BinaryDataTree/tanos_lr_improve_checkpoints/epoch_70.pth"
+checkpoint="../data_center/fight_assault/BinaryDataTree/lr_improve_checkpoints/epoch_65.pth"
+
 model = init_recognizer(
     config,
     checkpoint,
@@ -36,18 +37,20 @@ while True:
     try:
         if not os.listdir(receive_path):
             continue
-        os.system(f"mv {receive_path}* {path_dir}")
+        os.system(f"mv {receive_path}* {path_dir}")THRESEHOLD
         file_list = os.listdir(path_dir)
         file_list.sort()#시간순 정렬
         for i in file_list:
             results = inference_recognizer(model,path_dir+i,label)
-            if results[0][0]=="abnormal" and results[0][1]>0.86:
+            if results[0][0]=="abnormal" and results[0][1]>THRESEHOLD:
+                os.system('./notice.sh')
                 '''
                 폭력 발생 db로 영상 보내야 함 and 처리 완료이므로 디렉토리에서 pop
                 '''
                 os.system(f"mv {path_dir+i} {db}")
                 data=StrConverter(i)
                 data["cam_num"]=0
+                data["score"]=results[0][1]
                 print(data)
                 try:
                     r = requests.post(server_url, data= json.dumps(data))
@@ -64,5 +67,6 @@ while True:
                 os.system(f"rm {path_dir+i}")
                 print(f"removed {path_dir+i} and :{results}")
     except:
-        os.system(f"rm {path_dir}*")
-        continue
+        print("there's noise in path_dir or receive_path")
+        os.system(f"rm -rf {path_dir}*")
+        os.system(f"rm -rf {receive_path}*")
