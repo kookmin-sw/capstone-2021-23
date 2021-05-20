@@ -1,4 +1,5 @@
 from django.db import models
+# cctv/modesl.py의 Cctv 테이블을 참조하기 위한 import
 from cctv.models import Cctv 
 #import ..cctv.models import CCTV
 class Account(models.Model):
