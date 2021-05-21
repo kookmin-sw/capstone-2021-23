@@ -4,10 +4,17 @@ import cv2
 import threading
 from django.shortcuts import render
 
+#첫 회원가입시 감시할 cctv선택할 html 페이지로 rendering할 라이브러리
+from django.template import loader
+from django.db.models import Count
+from django.http import HttpResponse
+#cctv model에서 사용가능한(is_used=False)인 cctv수 count
+from .models import Cctv
+
 class VideoCamera(object):
     def __init__(self):
         self.video = cv2.VideoCapture(
-    'udpsrc port=8041 caps = "application/x-rtp, media=(string)video, clock-rate=(int)90000, encoding-name=(string)H264"'
+    'udpsrc port=8051 caps = "application/x-rtp, media=(string)video, clock-rate=(int)90000, encoding-name=(string)H264"'
     ' ! rtph264depay'
     ' ! avdec_h264'
     ' ! videoconvert'
@@ -45,3 +52,14 @@ def serveStreaming(request):
 
 def index(request):
     return render(request, 'cctv/index.html')
+
+def select_cctv(request):
+    available_cctv = Cctv.objects.filter(is_used=False)
+    print(available_cctv)
+    template = loader.get_template('cctv/select_cctv.html')
+    context ={
+        'num_available_cctv': available_cctv.count(),
+        'cctvs' : available_cctv,
+    }
+    return HttpResponse(template.render(context, request))
+   # return render(request, 'cctv/select_cctv.html')
