@@ -27,7 +27,7 @@ This project aims to implement a CCTV system that can detect dangerous events im
 
 ```markdown
 😁 Name : 박건희
-👨🏻‍💻 ID : 20163107
+👨🏻‍💻 ID   : 20163107
 📧 Email: pgh9801@kookmin.ac.kr
 
 🛠 Role:
@@ -36,39 +36,39 @@ This project aims to implement a CCTV system that can detect dangerous events im
     -
 ```
 
-<img align=left src = "https://user-images.githubusercontent.com/21096675/113386677-b5086a00-93c5-11eb-8388-1901400ac829.png" width="200px" height="175px">
+<img align=left src = "https://user-images.githubusercontent.com/21096675/113386677-b5086a00-93c5-11eb-8388-1901400ac829.png" width="200px" height="180px">
 
 ```markdown
 😁 Name : 김소망
-👨🏻‍💻 ID : 20163094
+👨🏻‍💻 ID   : 20163094
 📧 Email: akfls745@kookmin.ac.kr
 
-🛠 Role:
+🛠 Role :
     -
     -
     -
 ```
-<img align=left src ="https://user-images.githubusercontent.com/21096675/112747550-178dee80-8ff1-11eb-9eb7-8059c506133e.png" width="200px" height="175px">
+<img align=left src ="https://user-images.githubusercontent.com/21096675/112747550-178dee80-8ff1-11eb-9eb7-8059c506133e.png" width="200px" height="180px">
 
 ```markdown
 😁 Name : 임태현
-👨🏻‍💻 ID : 20163153
+👨🏻‍💻 ID   : 20163153
 📧 Email: plmoknijb15@kookmin.ac.kr
 
-🛠 Role:
+🛠 Role :
     -
     -
     -
 ```
 
-<img align=left src = "https://user-images.githubusercontent.com/21096675/113386691-bafe4b00-93c5-11eb-98d9-9e3933ae8d1c.png" width="200px" height="175px">
+<img align=left src = "https://user-images.githubusercontent.com/21096675/113386691-bafe4b00-93c5-11eb-98d9-9e3933ae8d1c.png" width="200px" height="180px">
 
 ```markdown
 😁 Name : 함윤석
-👨🏻‍💻 ID : 20163175
+👨🏻‍💻 ID   : 20163175
 📧 Email: ham5312@kookmin.ac.kr 
 
-🛠 Role:
+🛠 Role :
     -
     -
     -
