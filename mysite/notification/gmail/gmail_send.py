@@ -127,11 +127,16 @@ def main():
     template = f.read()
     f.close()
 
+    start = template.find("<findme_start>")
+    end = template.find("<findme_end>")
+
+    new_str = template[start:end+12].format(space="우리집", day ="오늘", time="지금")
+
     to = "akfls745@kookmin.ac.kr"
     sender = "plmoknijb3123@gmail.com"
     subject = "[이상 행동이 검출되었습니다]"
     msgPlain = ""
-    msgHtml = template
+    msgHtml = template[:start] + new_str + template[end+12:]
 
     # print(msgPlain)
     # print(msgHtml)
