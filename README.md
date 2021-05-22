@@ -21,58 +21,46 @@ This project aims to implement a CCTV system that can detect dangerous events im
 <br/>
 
 ## 4. 팀 소개
-### **박건희(팀장)**
 
-<img align="left" src = "https://user-images.githubusercontent.com/21096675/112747542-12c93a80-8ff1-11eb-85e9-965e0c9e78d5.png" width="200px" height="200px">
+#### **박건희**
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🐧 &nbsp;&nbsp;**Student ID**    : ****3107  
-&nbsp;  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;📧 &nbsp;&nbsp;**E-Mail** : pgh9801@kookmin.ac.kr  
-&nbsp;  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🖥  &nbsp;&nbsp;**Role**  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -  서버 총괄    
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -  백엔드  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -  웹 프론트엔드  
-<br/>
+<img src = "https://user-images.githubusercontent.com/21096675/112747542-12c93a80-8ff1-11eb-85e9-965e0c9e78d5.png" width="200px" height="200px">
 
-### **김소망**
+```markdown
+👨🏻‍💻 ID : 20163107
+📧 Email: pgh9801@kookmin.ac.kr
+🛠 Role:
+```
 
-<img align="left" src = "https://user-images.githubusercontent.com/21096675/113386677-b5086a00-93c5-11eb-8388-1901400ac829.png" width="200px" height="200px">
+#### **김소망**
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🐧 &nbsp;&nbsp;**Student ID**    : ****3094  
-&nbsp;  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;📧 &nbsp;&nbsp;**E-Mail** : akfls745@kookmin.ac.kr  
-&nbsp;  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🖥  &nbsp;&nbsp;**Role**  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -  보드 총괄   
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -  웹 프론트엔드  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -  백엔드   
-<br/>
+<img src = "https://user-images.githubusercontent.com/21096675/113386677-b5086a00-93c5-11eb-8388-1901400ac829.png" width="200px" height="200px">
 
-### **임태현**
-<img align="left" src ="https://user-images.githubusercontent.com/21096675/112747550-178dee80-8ff1-11eb-9eb7-8059c506133e.png" width="200px" height="200px">
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🐧 &nbsp;&nbsp;**Student ID**    : ****3153  
-&nbsp;  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;📧 &nbsp;&nbsp;**E-Mail** : plmoknijb15@kookmin.ac.kr   
-&nbsp;  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🖥  &nbsp;&nbsp;**Role**  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -  데이터 셋 구축  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -  모델 학습   
-<br/>
-<br/>
-### **함윤석**
+```markdown
+👨🏻‍💻 ID : 20163094
+📧 Email: akfls745@kookmin.ac.kr
+🛠 Role: 
+```
 
-<img align="left" src = "https://user-images.githubusercontent.com/21096675/113386691-bafe4b00-93c5-11eb-98d9-9e3933ae8d1c.png" width="200px" height="200px">
+#### **임태현**
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🐧 &nbsp;&nbsp;**Student ID**    : ****3175    
-&nbsp;  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;📧 &nbsp;&nbsp;**E-Mail** :ham5312@kookmin.ac.kr  
-&nbsp;  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🖥  &nbsp;&nbsp;**Role**  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -  데이터 셋 구축  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -  모델 학습   
-<br/>
-<br/>
+<img src ="https://user-images.githubusercontent.com/21096675/112747550-178dee80-8ff1-11eb-9eb7-8059c506133e.png" width="200px" height="200px">
+
+```markdown
+👨🏻‍💻 ID : 20163153
+📧 Email: plmoknijb15@kookmin.ac.kr
+🛠 Role:
+```
+
+#### **함윤석**
+
+<img src = "https://user-images.githubusercontent.com/21096675/113386691-bafe4b00-93c5-11eb-98d9-9e3933ae8d1c.png" width="200px" height="200px">
+
+```markdown
+👨🏻‍💻 ID : 20163175
+📧 Email: ham5312@kookmin.ac.kr  
+🛠 Role:
+```
 
 ## 5. 사용법
