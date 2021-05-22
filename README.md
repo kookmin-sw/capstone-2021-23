@@ -23,7 +23,7 @@ This project aims to implement a CCTV system that can detect dangerous events im
 ## 4. 팀 소개
 
 
-<img align=left src = "https://user-images.githubusercontent.com/21096675/112747542-12c93a80-8ff1-11eb-85e9-965e0c9e78d5.png" width="200px" height="175px">
+<img align=left src = "https://user-images.githubusercontent.com/21096675/112747542-12c93a80-8ff1-11eb-85e9-965e0c9e78d5.png" width="200px" height="180px">
 
 ```markdown
 😁 Name : 박건희
