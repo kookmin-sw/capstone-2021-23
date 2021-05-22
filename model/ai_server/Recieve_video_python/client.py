@@ -69,4 +69,3 @@ while True:
                 sbuf.put_bytes(img_str)
             print('File Sent')
         os.system(f"rm ./receive_video/*.mp4")
-
