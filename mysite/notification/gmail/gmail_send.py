@@ -13,6 +13,8 @@ from email.mime.image import MIMEImage
 from email.mime.audio import MIMEAudio
 from email.mime.base import MIMEBase
 
+from thumbnail import make_thumbnail
+
 SCOPES = 'https://www.googleapis.com/auth/gmail.send'
 CLIENT_SECRET_FILE = 'client_secret.json'
 APPLICATION_NAME = 'Gmail API Python Send Email'
@@ -132,12 +134,30 @@ def main():
 
     new_str = template[start:end+12].format(space="우리집", day ="오늘", time="지금")
 
-    to = "akfls745@kookmin.ac.kr"
+    template = template[:start] + new_str + template[end+12:]
+
+    # thumbnail
+    file_name = "stop.mp4"
+    img_name = make_thumbnail(file_name)
+
+    start = template.find("<img_findme>")
+    end = template.find("</img_findme>")
+
+    img_url = "http://58.142.223.232:8080/thumbnail/" + img_name
+
+    # print(template[start:end+13])
+    new_str = template[start:end+13].format(img_url=img_url)
+    # print(new_str)
+
+    template = template[:start] + new_str + template[end+13:]
+
+    ############################################33
+
+    to = "ham5312@gmail.com"
     sender = "plmoknijb3123@gmail.com"
     subject = "[이상 행동이 검출되었습니다]"
     msgPlain = ""
-    msgHtml = template[:start] + new_str + template[end+12:]
-
+    msgHtml = template
     # print(msgPlain)
     # print(msgHtml)
     SendMessage(sender, to, subject, msgHtml, msgPlain)
