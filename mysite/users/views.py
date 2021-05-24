@@ -148,3 +148,8 @@ def kakao_login_callback(request):
 def login(request):
     render(request, "users/login.html")
 
+@method_decorator(csrf_exempt, name="dispatch")
+def send_email(request):
+    req_body = json.loads(request.body.decode('utf-8'))
+    print(req_body)
+
