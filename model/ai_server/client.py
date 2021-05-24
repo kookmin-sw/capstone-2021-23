@@ -19,23 +19,6 @@ while True:
     s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
     s.connect((HOST, PORT))
     with s:
-#!/usr/bin/python3
-from socket import socket, gethostname, SHUT_WR
-import os
-s = socket()
-host = gethostname()
-port = 3399
-s.connect((host, port))
-path="assult_candidate"
-for i in os.listdir(path):
-    print("Sending video..")
-    with open(f"{path}/{i}", "rb") as video:
-        buffer = video.read()
-        print(buffer)
-        s.sendall(buffer)
-        print("Done sending..")
-    s.close()
-
 
         while True:
             files_to_send = os.listdir(path)
@@ -50,6 +33,7 @@ for i in os.listdir(path):
 
         hash_type = 'a'
 
+        #files = os.listdir(path)
 
         for file_name in files_to_send:
             print(file_name)
@@ -66,6 +50,23 @@ for i in os.listdir(path):
             with open(path + file_name, 'rb') as f:
 
                 img_str=f.read()
+                # print(type(img_str))
+                #
+                # nparr = np.fromstring(img_str, np.uint8)
+                # print(type(nparr))
+                # print(nparr.shape)
+                #
+                # img_np = cv2.imdecode(nparr, cv2.IMREAD_COLOR)
+
+                # print(type(img_np))
+                # print(img_np.shape)
+
+                # cv2.imshow("q",img_np)
+                # cv2.waitKey(1)
+                # if isPeople(temp):
+                # print(type(temp))
+                # print
                 sbuf.put_bytes(img_str)
             print('File Sent')
         os.system(f"rm ./receive_video/*.mp4")
+
