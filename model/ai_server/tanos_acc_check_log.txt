@@ -1,21 +1,9 @@
 file path:../data_center/fight_assault/BinaryDataTree/tanos_lr_improve_checkpoints/best_top1_acc_epoch_120.pth
 result:{'abnormal': 102, 'normal': 165, 'wrong': 40}
+file path:../data_center/fight_assault/BinaryDataTree/tanos_lr_improve_checkpoints/epoch_5.pth
+result:{'abnormal': 90, 'normal': 195, 'wrong': 22}
 file path:../data_center/fight_assault/BinaryDataTree/tanos_lr_improve_checkpoints/epoch_10.pth
 result:{'abnormal': 91, 'normal': 198, 'wrong': 18}
-file path:../data_center/fight_assault/BinaryDataTree/tanos_lr_improve_checkpoints/epoch_100.pth
-result:{'abnormal': 91, 'normal': 194, 'wrong': 22}
-file path:../data_center/fight_assault/BinaryDataTree/tanos_lr_improve_checkpoints/epoch_105.pth
-result:{'abnormal': 91, 'normal': 182, 'wrong': 34}
-file path:../data_center/fight_assault/BinaryDataTree/tanos_lr_improve_checkpoints/epoch_110.pth
-result:{'abnormal': 88, 'normal': 200, 'wrong': 19}
-file path:../data_center/fight_assault/BinaryDataTree/tanos_lr_improve_checkpoints/epoch_115.pth
-result:{'abnormal': 83, 'normal': 202, 'wrong': 22}
-file path:../data_center/fight_assault/BinaryDataTree/tanos_lr_improve_checkpoints/epoch_120.pth
-result:{'abnormal': 102, 'normal': 165, 'wrong': 40}
-file path:../data_center/fight_assault/BinaryDataTree/tanos_lr_improve_checkpoints/epoch_125.pth
-result:{'abnormal': 85, 'normal': 198, 'wrong': 24}
-file path:../data_center/fight_assault/BinaryDataTree/tanos_lr_improve_checkpoints/epoch_130.pth
-result:{'abnormal': 89, 'normal': 192, 'wrong': 26}
 file path:../data_center/fight_assault/BinaryDataTree/tanos_lr_improve_checkpoints/epoch_15.pth
 result:{'abnormal': 96, 'normal': 193, 'wrong': 18}
 file path:../data_center/fight_assault/BinaryDataTree/tanos_lr_improve_checkpoints/epoch_20.pth
@@ -30,8 +18,6 @@ file path:../data_center/fight_assault/BinaryDataTree/tanos_lr_improve_checkpoin
 result:{'abnormal': 81, 'normal': 201, 'wrong': 25}
 file path:../data_center/fight_assault/BinaryDataTree/tanos_lr_improve_checkpoints/epoch_45.pth
 result:{'abnormal': 94, 'normal': 199, 'wrong': 14}
-file path:../data_center/fight_assault/BinaryDataTree/tanos_lr_improve_checkpoints/epoch_5.pth
-result:{'abnormal': 90, 'normal': 195, 'wrong': 22}
 file path:../data_center/fight_assault/BinaryDataTree/tanos_lr_improve_checkpoints/epoch_50.pth
 result:{'abnormal': 93, 'normal': 188, 'wrong': 26}
 file path:../data_center/fight_assault/BinaryDataTree/tanos_lr_improve_checkpoints/epoch_55.pth
@@ -52,5 +38,19 @@ file path:../data_center/fight_assault/BinaryDataTree/tanos_lr_improve_checkpoin
 result:{'abnormal': 91, 'normal': 193, 'wrong': 23}
 file path:../data_center/fight_assault/BinaryDataTree/tanos_lr_improve_checkpoints/epoch_95.pth
 result:{'abnormal': 94, 'normal': 190, 'wrong': 23}
+file path:../data_center/fight_assault/BinaryDataTree/tanos_lr_improve_checkpoints/epoch_100.pth
+result:{'abnormal': 91, 'normal': 194, 'wrong': 22}
+file path:../data_center/fight_assault/BinaryDataTree/tanos_lr_improve_checkpoints/epoch_105.pth
+result:{'abnormal': 91, 'normal': 182, 'wrong': 34}
+file path:../data_center/fight_assault/BinaryDataTree/tanos_lr_improve_checkpoints/epoch_110.pth
+result:{'abnormal': 88, 'normal': 200, 'wrong': 19}
+file path:../data_center/fight_assault/BinaryDataTree/tanos_lr_improve_checkpoints/epoch_115.pth
+result:{'abnormal': 83, 'normal': 202, 'wrong': 22}
+file path:../data_center/fight_assault/BinaryDataTree/tanos_lr_improve_checkpoints/epoch_120.pth
+result:{'abnormal': 102, 'normal': 165, 'wrong': 40}
+file path:../data_center/fight_assault/BinaryDataTree/tanos_lr_improve_checkpoints/epoch_125.pth
+result:{'abnormal': 85, 'normal': 198, 'wrong': 24}
+file path:../data_center/fight_assault/BinaryDataTree/tanos_lr_improve_checkpoints/epoch_130.pth
+result:{'abnormal': 89, 'normal': 192, 'wrong': 26}
 file path:../data_center/fight_assault/BinaryDataTree/tanos_lr_improve_checkpoints/latest.pth
 result:{'abnormal': 89, 'normal': 192, 'wrong': 26}
