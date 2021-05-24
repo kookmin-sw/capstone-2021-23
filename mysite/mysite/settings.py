@@ -51,20 +51,6 @@ INSTALLED_APPS = [
     #'rest_auth.registration',
 ]
 
-# one site can have several domains, 
-# but This system operates just 1 site
-SITE_ID = 1 
-"""
-SOCIALACCOUNT_PROVIDERS = {
-    'kakao' : {
-        'APP' : {
-            'client_id' : ,
-            'secret' : ,
-            'key' :
-        }    
-    }        
-}
-"""
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
