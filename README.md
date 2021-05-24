@@ -16,63 +16,71 @@ This project aims to implement a CCTV system that can detect dangerous events im
 
 ## 3. 소개 영상
 
+#### 중간 발표 영상
+
 [![23조 중간 발표 영상](http://img.youtube.com/vi/mTJcfbAd-b8/0.jpg)](https://youtu.be/mTJcfbAd-b8?t=0s)
 
+#### 시연 동영상
+
+[![23조 시연 영상](http://img.youtube.com/vi/Wo_nVTp51OM/0.jpg)](https://youtu.be/Wo_nVTp51OM?t=0s)
 <br/>
 
 ## 4. 팀 소개
-### **박건희(팀장)**
 
-<img align="left" src = "https://user-images.githubusercontent.com/21096675/112747542-12c93a80-8ff1-11eb-85e9-965e0c9e78d5.png" width="200px" height="200px">
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🐧 &nbsp;&nbsp;**Student ID**    : ****3107  
-&nbsp;  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;📧 &nbsp;&nbsp;**E-Mail** : pgh9801@kookmin.ac.kr  
-&nbsp;  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🖥  &nbsp;&nbsp;**Role**  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -  서버 총괄    
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -  백엔드  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -  웹 프론트엔드  
-<br/>
+<img align=left src = "https://user-images.githubusercontent.com/21096675/112747542-12c93a80-8ff1-11eb-85e9-965e0c9e78d5.png" width="200px" height="180px">
 
-### **김소망**
+```markdown
+😁 Name : 박건희
+👨🏻‍💻 ID   : 20163107
+📧 Email: pgh9801@kookmin.ac.kr
 
-<img align="left" src = "https://user-images.githubusercontent.com/21096675/113386677-b5086a00-93c5-11eb-8388-1901400ac829.png" width="200px" height="200px">
+🛠 Role:
+    - Backend
+    - 카카오 로그인 연동
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🐧 &nbsp;&nbsp;**Student ID**    : ****3094  
-&nbsp;  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;📧 &nbsp;&nbsp;**E-Mail** : akfls745@kookmin.ac.kr  
-&nbsp;  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🖥  &nbsp;&nbsp;**Role**  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -  보드 총괄   
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -  웹 프론트엔드  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -  백엔드   
-<br/>
+```
 
-### **임태현**
-<img align="left" src ="https://user-images.githubusercontent.com/21096675/112747550-178dee80-8ff1-11eb-9eb7-8059c506133e.png" width="200px" height="200px">
+<img align=left src = "https://user-images.githubusercontent.com/21096675/113386677-b5086a00-93c5-11eb-8388-1901400ac829.png" width="200px" height="180px">
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🐧 &nbsp;&nbsp;**Student ID**    : ****3153  
-&nbsp;  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;📧 &nbsp;&nbsp;**E-Mail** : plmoknijb15@kookmin.ac.kr   
-&nbsp;  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🖥  &nbsp;&nbsp;**Role**  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -  데이터 셋 구축  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -  모델 학습   
-<br/>
-<br/>
-### **함윤석**
+```markdown
+😁 Name : 김소망
+👨🏻‍💻 ID   : 20163094
+📧 Email: akfls745@kookmin.ac.kr
 
-<img align="left" src = "https://user-images.githubusercontent.com/21096675/113386691-bafe4b00-93c5-11eb-98d9-9e3933ae8d1c.png" width="200px" height="200px">
+🛠 Role :
+    - 보드 총괄
+    - Object Detection
+     
+```
+<img align=left src ="https://user-images.githubusercontent.com/21096675/112747550-178dee80-8ff1-11eb-9eb7-8059c506133e.png" width="200px" height="180px">
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🐧 &nbsp;&nbsp;**Student ID**    : ****3175    
-&nbsp;  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;📧 &nbsp;&nbsp;**E-Mail** :ham5312@kookmin.ac.kr  
-&nbsp;  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🖥  &nbsp;&nbsp;**Role**  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -  데이터 셋 구축  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -  모델 학습   
-<br/>
+```markdown
+😁 Name : 임태현
+👨🏻‍💻 ID   : 20163153
+📧 Email: plmoknijb15@kookmin.ac.kr
+
+🛠 Role :
+    - 데이터 셋 구축 & 모델 학습
+    - 알림 기능
+
+```
+
+<img align=left src = "https://user-images.githubusercontent.com/21096675/113386691-bafe4b00-93c5-11eb-98d9-9e3933ae8d1c.png" width="200px" height="180px">
+
+```markdown
+😁 Name : 함윤석
+👨🏻‍💻 ID   : 20163175
+📧 Email: ham5312@kookmin.ac.kr 
+
+🛠 Role :
+    - 데이터 셋 구축 & 모델 학습
+    - 모델 성능 향상
+
+```
+
 <br/>
 
 ## 5. 사용법
+
+추후 pdf 파일 업로드 예정

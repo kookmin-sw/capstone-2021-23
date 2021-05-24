@@ -1,3 +1,5 @@
+#-*- encoding: utf-8 -*-. -
+
 import httplib2
 import os
 import oauth2client
@@ -10,6 +12,8 @@ import mimetypes
 from email.mime.image import MIMEImage
 from email.mime.audio import MIMEAudio
 from email.mime.base import MIMEBase
+
+from thumbnail import make_thumbnail
 
 SCOPES = 'https://www.googleapis.com/auth/gmail.send'
 CLIENT_SECRET_FILE = 'client_secret.json'
@@ -121,22 +125,39 @@ def createMessageWithAttachment(
 
 
 def main():
-    to = "pgh9801@gmail.com"
+    f = open("template2.html")
+    template = f.read()
+    f.close()
+
+    start = template.find("<findme_start>")
+    end = template.find("<findme_end>")
+
+    new_str = template[start:end+12].format(space="우리집", day ="오늘", time="지금")
+
+    template = template[:start] + new_str + template[end+12:]
+
+    # thumbnail
+    file_name = "stop.mp4"
+    img_name = make_thumbnail(file_name)
+
+    start = template.find("<img_findme>")
+    end = template.find("</img_findme>")
+
+    img_url = "http://58.142.223.232:8080/thumbnail/" + img_name
+
+    # print(template[start:end+13])
+    new_str = template[start:end+13].format(img_url=img_url)
+    # print(new_str)
+
+    template = template[:start] + new_str + template[end+13:]
+
+    ############################################33
+
+    to = "ham5312@gmail.com"
     sender = "plmoknijb3123@gmail.com"
-    subject = "test mail"
-    msgPlain = "Hi!\nHow are you?\nHere is the link you wanted:\nit is test\nhttp://www.naver.com"
-    msgHtml = """\
-<html>
-  <head></head>
-  <body>
-    <p>Hi!<br>
-       How are you?<br>
-       Here is the <a href="http://www.naver.com">link</a> you wanted.<br>
-       it is test!<br>
-    </p>
-  </body>
-</html>
-"""
+    subject = "[이상 행동이 검출되었습니다]"
+    msgPlain = ""
+    msgHtml = template
     # print(msgPlain)
     # print(msgHtml)
     SendMessage(sender, to, subject, msgHtml, msgPlain)

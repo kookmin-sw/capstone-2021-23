@@ -15,6 +15,13 @@ from django.utils.decorators import method_decorator
 import json
 from .models import Record
 
+#첫 회원가입시 감시할 cctv선택할 html 페이지로 rendering할 라이브러리
+from django.template import loader
+from django.db.models import Count
+from django.http import HttpResponse
+#cctv model에서 사용가능한(is_used=False)인 cctv수 count
+from .models import Cctv
+
 class VideoCamera(object):
     def __init__(self):
         self.video = cv2.VideoCapture(
@@ -106,10 +113,7 @@ def main_page(request):
 
 @csrf_exempt
 def save_cctv(request):
-    #print(json.loads(request.body.decode('utf-8')))
-    #orm = NameForm(request.POST)
     cam_loc = request.POST["submit"]
-    #am = Cctv.objects.get(
-    #       user_account.save()
 
     return redirect('cctv:main_page')
+
