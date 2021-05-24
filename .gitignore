@@ -1,1 +1,2 @@
-*.json
+mysite/notification/gmail/client_secret.json
+mysite/notification/kakao/kakao_token.json
