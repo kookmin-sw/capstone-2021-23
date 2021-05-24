@@ -1,8 +1,7 @@
 import socket
 import os
-
 import buffer
-
+import cv2
 HOST = ''
 PORT = 2345
 
@@ -15,8 +14,36 @@ try:
 except FileExistsError:
     pass
 
+def make_thumbnail(file_name):
+    video_dir = "/home/foscar/Desktop/2021_capstone/mmaction2/ai_server/receive_video/"
+    thumbnail_dir = "/home/foscar/Desktop/2021_capstone/mmaction2/ai_server/web/thumbnail/"
+
+    # print("file name check")
+    # print(file_name)
+    # print(video_dir + file_name)
+    cap = cv2.VideoCapture(video_dir + file_name)
+    count = 0
+
+    # print("in")
+    while True:
+        ret,frame = cap.read()
+
+        if not ret:
+            print("can not read video")
+
+        if count > 50:
+            # print("critical_section_in")
+            cv2.imwrite(f"{thumbnail_dir + file_name.split('.')[0]}.jpg", frame)
+            # print("critical_section_out")
+            break
+
+        count += 1
+    # print("out")
+
 s = socket.socket()
+s.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
 s.bind((HOST, PORT))
+
 s.listen(10)
 print("Waiting for a connection.....")
 
@@ -35,6 +62,7 @@ while True:
         file_name = connbuf.get_utf8()
         if not file_name:
             break
+        only_file_name=file_name
         file_name = os.path.join('uploads',file_name)
         print('file name: ', file_name)
 
@@ -55,5 +83,8 @@ while True:
             else:
                 os.system(f"mv {writing_video_dir}/* {receive_video_dir}/")
                 print('File received successfully.')
+
+        make_thumbnail(only_file_name)
+
     print('Connection closed.')
     conn.close()
