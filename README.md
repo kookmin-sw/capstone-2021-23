@@ -18,6 +18,7 @@ This project aims to implement a CCTV system that can detect dangerous events im
 
 [![23조 중간 발표 영상](http://img.youtube.com/vi/mTJcfbAd-b8/0.jpg)](https://youtu.be/mTJcfbAd-b8?t=0s)
 
+[![23조 시연 영상](http://img.youtube.com/vi/SnueBKNEczI/0.jpg)](https://youtu.be/SnueBKNEczI?t=0s)
 <br/>
 
 ## 4. 팀 소개
