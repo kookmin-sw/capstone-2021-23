@@ -6,8 +6,12 @@ from django.shortcuts import render
 
 class VideoCamera(object):
     def __init__(self):
-        self.video = cv2.VideoCapture('udpsrc port=8001  caps = "application/x-rtp, media=(string)video, clock-rate=(int)90000, encoding-name=(string)H264, payload=(int)96" ! rtpjitterbuffer ! rtph264depay ! decodebin  ! videoconvert ! appsink',
-            cv2.CAP_GSTREAMER)
+        self.video = cv2.VideoCapture(
+    'udpsrc port=8041 caps = "application/x-rtp, media=(string)video, clock-rate=(int)90000, encoding-name=(string)H264"'
+    ' ! rtph264depay'
+    ' ! avdec_h264'
+    ' ! videoconvert'
+    ' ! appsink', cv2.CAP_GSTREAMER)
         (self.grabbed, self.frame) = self.video.read()
         threading.Thread(target=self.update, args=()).start()
 
@@ -15,10 +19,9 @@ class VideoCamera(object):
         self.video.release()
 
     def get_frame(self):
-        image = self.frame #numpy ndarray
-        # jpg didn't worked!!!!!
-        _,png = cv2.imencode('.png', image)
-        return png.tobytes()
+        image = self.frame
+        _, jpeg = cv2.imencode('.png', image)
+        return jpeg.tobytes()
 
     def update(self):
         while True:
@@ -37,7 +40,7 @@ def serveStreaming(request):
     try:
         cam = VideoCamera()
         return StreamingHttpResponse(gen(cam), content_type="multipart/x-mixed-replace;boundary=frame")
-    except:  # Should Handle Error!!!!!
+    except:  # This is bad! replace it with proper handling
         pass
 
 def index(request):
