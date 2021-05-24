@@ -8,5 +8,7 @@ urlpatterns =[
     # route, view, (kwargs, name)
     path('', views.index, name='index'),
     path('serveStreaming/', views.serveStreaming,name='serveStreaming'),
-    #path('', views.gen, name='gen')
+    path('registration/',views.select_cctv,name='select_cctv'),
+    path('main/', views.main_page, name='main_page'),
+    path('save/', views.save_cctv,name='save_cctv'),
 ]

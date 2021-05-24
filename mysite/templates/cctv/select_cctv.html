@@ -1,0 +1,41 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>page for which cctv to monitor</title>
+    <style>
+        img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%
+        }
+    </style>
+  </head>
+  <body>
+    <h1 align="center">모니터할 cctv를 선택하세요</h1>
+    <h3 align="center">현재 사용가능한 cctv는 {{num_available_cctv}} 대 입니다.</h3>
+    <table border ="2">
+        <thead>
+	    <th>카메라 번호</th>
+	    <th>카메라 설치 위치</th>
+	    <th>카메라 선택</th>
+	</thead>
+        <tbody>	
+    	  {% for cctv in cctvs %}
+	  <tr>
+	    <td>{{cctv.cam_id}}</td>
+	    <form action = "{% url 'cctv:save_cctv' %}" method = "post">
+	     {% csrf_token %}
+	    <td><input type="text" placeholder="설치할 장소를 입력하세요"></td>
+	    <td><input type="submit" value="선택 완료" name = "submit"></td> 
+	    
+	    </form>
+
+        </tr>
+	{% endfor %}
+	</tbody>
+    </table>
+  </body>
+</html>
+
