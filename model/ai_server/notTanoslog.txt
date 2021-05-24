@@ -1,5 +1,7 @@
 file path:../data_center/fight_assault/BinaryDataTree/lr_improve_checkpoints/best_top1_acc_epoch_65.pth
 result:{'abnormal': 88, 'normal': 195, 'wrong': 24}
+file path:../data_center/fight_assault/BinaryDataTree/lr_improve_checkpoints/epoch_5.pth
+result:{'abnormal': 85, 'normal': 200, 'wrong': 22}
 file path:../data_center/fight_assault/BinaryDataTree/lr_improve_checkpoints/epoch_10.pth
 result:{'abnormal': 92, 'normal': 193, 'wrong': 22}
 file path:../data_center/fight_assault/BinaryDataTree/lr_improve_checkpoints/epoch_15.pth
@@ -16,8 +18,6 @@ file path:../data_center/fight_assault/BinaryDataTree/lr_improve_checkpoints/epo
 result:{'abnormal': 95, 'normal': 201, 'wrong': 11}
 file path:../data_center/fight_assault/BinaryDataTree/lr_improve_checkpoints/epoch_45.pth
 result:{'abnormal': 92, 'normal': 199, 'wrong': 16}
-file path:../data_center/fight_assault/BinaryDataTree/lr_improve_checkpoints/epoch_5.pth
-result:{'abnormal': 85, 'normal': 200, 'wrong': 22}
 file path:../data_center/fight_assault/BinaryDataTree/lr_improve_checkpoints/epoch_50.pth
 result:{'abnormal': 88, 'normal': 196, 'wrong': 23}
 file path:../data_center/fight_assault/BinaryDataTree/lr_improve_checkpoints/epoch_55.pth
