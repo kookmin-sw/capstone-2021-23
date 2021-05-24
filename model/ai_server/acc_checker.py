@@ -68,7 +68,7 @@ with open("tanos_acc_check_log.txt", 'w') as f:
             # print(f"pth file: {i}",end=" ")
             file_list = os.listdir(path)
             total+=len(file_list)
-            file_list.sort()#시간순 정렬
+            file_list.sort()#시간순 -p 10000:10000/udp정렬
             for j,i in enumerate(file_list):
                 print(f"now {path} inference and total count:{j}",end=" ")
                 results=inference_recognizer(model,path+"/"+i,label)
