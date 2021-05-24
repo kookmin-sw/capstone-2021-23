@@ -1,7 +1,7 @@
 from django.db import models
 # cctv/modesl.py의 Cctv 테이블을 참조하기 위한 import
 from cctv.models import Cctv 
-#import ..cctv.models import CCTV
+
 class Account(models.Model):
     # email lenngh > 20 인 경우도 있음
     user_id = models.CharField(max_length= 30,unique=True)
