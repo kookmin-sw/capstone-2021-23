@@ -8,7 +8,7 @@ urlpatterns =[
     # route, view, (kwargs, name)
     path('', views.index, name='index'),
     path('serveStreaming/', views.serveStreaming,name='serveStreaming'),
-    # 첫 회원가입시 감시할 cctv 설정 페이지 경로
     path('registration/',views.select_cctv,name='select_cctv'),
-    #path('', views.gen, name='gen')
+    path('main/', views.main_page, name='main_page'),
+    path('save/', views.save_cctv,name='save_cctv'),
 ]
