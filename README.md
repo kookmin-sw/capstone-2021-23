@@ -31,9 +31,9 @@ This project aims to implement a CCTV system that can detect dangerous events im
 📧 Email: pgh9801@kookmin.ac.kr
 
 🛠 Role:
-    -
-    -
-    -
+    - Backend
+    - 카카오 로그인 연동
+
 ```
 
 <img align=left src = "https://user-images.githubusercontent.com/21096675/113386677-b5086a00-93c5-11eb-8388-1901400ac829.png" width="200px" height="180px">
@@ -44,9 +44,9 @@ This project aims to implement a CCTV system that can detect dangerous events im
 📧 Email: akfls745@kookmin.ac.kr
 
 🛠 Role :
-    -
-    -
-    -
+    - 보드 총괄
+    - Object Detection
+     
 ```
 <img align=left src ="https://user-images.githubusercontent.com/21096675/112747550-178dee80-8ff1-11eb-9eb7-8059c506133e.png" width="200px" height="180px">
 
@@ -56,9 +56,9 @@ This project aims to implement a CCTV system that can detect dangerous events im
 📧 Email: plmoknijb15@kookmin.ac.kr
 
 🛠 Role :
-    -
-    -
-    -
+    - 데이터 셋 구축 & 모델 학습
+    - 알림 기능
+
 ```
 
 <img align=left src = "https://user-images.githubusercontent.com/21096675/113386691-bafe4b00-93c5-11eb-98d9-9e3933ae8d1c.png" width="200px" height="180px">
@@ -69,11 +69,13 @@ This project aims to implement a CCTV system that can detect dangerous events im
 📧 Email: ham5312@kookmin.ac.kr 
 
 🛠 Role :
-    -
-    -
-    -
+    - 데이터 셋 구축 & 모델 학습
+    - 모델 성능 향상
+
 ```
 
 <br/>
 
 ## 5. 사용법
+
+추후 pdf 파일 업로드 예정
