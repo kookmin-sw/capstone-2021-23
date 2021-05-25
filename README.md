@@ -5,6 +5,7 @@
 
 본 프로젝트에서는 실시간 이상(ex.폭행) 행동 감지 CCTV 시스템을 구축하고자 한다. 행동 인식(action recognition)을 하는 AI 기술로 CCTV 영상을 분석하여 이상 행동 발생 여부를 판단한다. 이상 행동으로 감지된 결과는 CCTV 관리자에게 전송하여 관리자가 위험 상황을 신속하게 대응하도록 보조 할 수 있다.
 
+
 <br/>
 
 ## 2. Abstract
@@ -15,6 +16,9 @@ This project aims to implement a CCTV system that can detect dangerous events im
 
 
 ## 3. 소개 영상
+#### 구조도
+![image](https://user-images.githubusercontent.com/54228425/119512896-b4c99100-bdae-11eb-8730-b2864d366beb.png)
+
 
 #### 중간 발표 영상
 
