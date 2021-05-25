@@ -66,7 +66,7 @@ This project aims to implement a CCTV system that can detect dangerous events im
 
 🛠 Role :
     - 데이터 셋 구축 & 모델 학습
-    - 알림 기능
+    - 알림 기능 &  모델 성능 향상
 
 ```
 
@@ -79,7 +79,7 @@ This project aims to implement a CCTV system that can detect dangerous events im
 
 🛠 Role :
     - 데이터 셋 구축 & 모델 학습
-    - 모델 성능 향상
+    - Ai Server 제작 & 모델 성능 향상
 
 ```
 
