@@ -50,7 +50,7 @@ https://user-images.githubusercontent.com/54228425/119828130-d8b6df00-bf34-11eb-
 📧 Email: pgh9801@kookmin.ac.kr
 
 🛠 Role:
-    - Web Server, Backend
+    - Web Application Server, Backend
     - 데이터셋 자동 다운로더 구현
 
 ```
