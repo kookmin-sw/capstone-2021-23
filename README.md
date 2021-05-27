@@ -29,6 +29,15 @@ This project aims to implement a CCTV system that can detect assault immediately
 
 [![23조 시연 영상](http://img.youtube.com/vi/Wo_nVTp51OM/0.jpg)](https://youtu.be/Wo_nVTp51OM?t=0s)
 <br/>
+#### Slowfast
+##### abnormal
+
+https://user-images.githubusercontent.com/54228425/119828068-c76dd280-bf34-11eb-81d9-76145975be8e.mp4
+##### normal
+
+https://user-images.githubusercontent.com/54228425/119828130-d8b6df00-bf34-11eb-824e-f5133405bac6.mp4
+
+
 
 ## 4. 팀 소개
 
