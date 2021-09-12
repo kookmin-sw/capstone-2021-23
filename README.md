@@ -16,9 +16,6 @@ This project aims to implement a CCTV system that can detect assault immediately
 
 
 ## 3. 소개 영상
-#### 구조도
-![KakaoTalk_20210525_164841255](https://user-images.githubusercontent.com/54228425/119645862-750bb380-be59-11eb-835b-893846f2ad40.jpg)
-
 
 
 #### 중간 발표 영상
