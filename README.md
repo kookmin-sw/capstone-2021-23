@@ -2,6 +2,7 @@
 ## 0. 수상
  * 캡스톤 1등
  * 국민대 아이디어 경진대회 1등
+ * sw
   
 ## 1. 프로젝트 소개
 
@@ -98,3 +99,6 @@ https://user-images.githubusercontent.com/54228425/119828130-d8b6df00-bf34-11eb-
 ## 5. 사용법
 
 추후 pdf 파일 업로드 예정
+
+## 6. 기타 url
+* https://www.joongang.co.kr/article/25030459
